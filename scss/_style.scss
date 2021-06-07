@@ -5,7 +5,8 @@ body {
    width: 100%;
    background: $alabaster;
    .services {
-      margin-top: 60px;
+      margin-top: 61px;
+      margin-bottom: 43px;
       .txt-holder {
          text-align: center;
          h1 {
@@ -44,8 +45,175 @@ body {
          }
       }
    }
+   .services-in-details {
+      margin-bottom: 48px;
+      position: relative;
+      .srv-ico {
+         margin: auto;
+         margin-bottom: 22px;
+         width: 108px;
+         height: 108px;
+         border: 1px solid transparent;
+         border-radius: 50%;
+         background: $turbo;
+         position: relative;
+         .ico-web:after {
+            content: "";
+            position: absolute;
+            background: url("../images/sprite/sprite.svg#ico-web") no-repeat;
+            width: 40px;
+            height: 40px;
+            top: calc(50% - 20px);
+            right: calc(50% - 20px);
+         }
+         .ico-graphic:after {
+            content: "";
+            position: absolute;
+            background: url("../images/sprite/sprite.svg#ico-graphic") no-repeat;
+            width: 40px;
+            height: 40px;
+            top: calc(50% - 20px);
+            right: calc(50% - 20px);
+         }
+         .ico-photo:after {
+            content: "";
+            position: absolute;
+            background: url("../images/sprite/sprite.svg#ico-photo") no-repeat;
+            width: 40px;
+            height: 40px;
+            top: calc(50% - 20px);
+            right: calc(50% - 20px);
+         }
+         .ico-developing:after {
+            content: "";
+            position: absolute;
+            background: url("../images/sprite/sprite.svg#ico-developing") no-repeat;
+            width: 40px;
+            height: 40px;
+            top: calc(50% - 20px);
+            right: calc(50% - 20px);
+         }
+      }
+      .styled-ico {
+         border: 1px solid $shark;
+         background: none;
+      }
+      .details-heading {
+         color: $woodsmoke;
+         font-size: 20px;
+         line-height: 22px;
+         letter-spacing: 1.05px;
+         font-weight: bold;
+         margin-bottom: 18px;
+         text-align: center;
+      }
+      p {
+         color: $doveGray;
+         font-size: 16px;
+         line-height: 25px;
+         font-weight: 300;
+         text-align: center;
+      }
+   }
 }
+
 .profile-wrapper {
    width: 100%;
+   min-height: 470px;
    background: $bunker;
+   .txt-holder {
+      text-align: center;
+      margin-top: 61px;
+      margin-bottom: 134px;
+      h1 {
+         color: $turbo;
+         font-size: 30px;
+         line-height: 32px;
+         font-weight: bold;
+         margin-bottom: 19px;
+         letter-spacing: 0.6px;
+         word-spacing: 0.15px;
+      }
+      p {
+         color: $white;
+         font-size: 16px;
+         list-style: 18px;
+         font-weight: 300;
+      }
+   }
+   .profile-in-details {
+      .profile-heading {
+         color: $white;
+         font-size: 20px;
+         line-height: 22px;
+         font-weight: bold;
+         letter-spacing: 0.9px;
+         margin-bottom: 22px;
+         text-align: center;
+      }
+      p {
+         color: $white;
+         font-size: 16px;
+         line-height: 20px;
+         font-weight: 300;
+         text-align: center;
+      }
+      .prf-ico {
+         position: relative;
+         .ico-analyse:after {
+            content: "";
+            position: absolute;
+            background: url("../images/sprite/sprite.svg#ico-analyse") no-repeat;
+            height: 45px;
+            width: 45px;
+            top: -73px;
+            left: calc(50% - 22px);
+         }
+         .ico-preparing:after {
+            content: "";
+            position: absolute;
+            background: url("../images/sprite/sprite.svg#ico-preparing") no-repeat;
+            height: 45px;
+            width: 45px;
+            top: -73px;
+            left: calc(50% - 22px);
+         }
+         .ico-working:after {
+            content: "";
+            position: absolute;
+            background: url("../images/sprite/sprite.svg#ico-working") no-repeat;
+            height: 45px;
+            width: 45px;
+            top: -73px;
+            left: calc(50% - 22px);
+         }
+         .ico-finalyse:after {
+            content: "";
+            position: absolute;
+            background: url("../images/sprite/sprite.svg#ico-finalyse") no-repeat;
+            height: 45px;
+            width: 45px;
+            top: -73px;
+            left: calc(50% - 22px);
+         }
+         .ico-testing:after {
+            content: "";
+            position: absolute;
+            background: url("../images/sprite/sprite.svg#ico-testing") no-repeat;
+            height: 45px;
+            width: 45px;
+            top: -73px;
+            left: calc(50% - 22px);
+         }
+         .ico-deliver:after {
+            content: "";
+            position: absolute;
+            background: url("../images/sprite/sprite.svg#ico-deliver") no-repeat;
+            height: 45px;
+            width: 45px;
+            top: -73px;
+            left: calc(50% - 22px);
+         }
+      }
+   }
 }
