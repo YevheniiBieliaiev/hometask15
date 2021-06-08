@@ -1,6 +1,7 @@
 body {
    font-family: $oswald;
 }
+/*services*/
 .services-wrapper {
    width: 100%;
    background: $alabaster;
@@ -44,6 +45,10 @@ body {
             letter-spacing: -0.05px;
          }
       }
+      @include media-breakpoint-down(sm) {
+         margin-top: 40px;
+         margin-bottom: 10px;
+      }
    }
    .services-in-details {
       margin-bottom: 48px;
@@ -57,41 +62,25 @@ body {
          border-radius: 50%;
          background: $turbo;
          position: relative;
-         .ico-web:after {
+         .sets-srv-ico:after {
             content: "";
             position: absolute;
-            background: url("../images/sprite/sprite.svg#ico-web") no-repeat;
             width: 40px;
             height: 40px;
             top: calc(50% - 20px);
             right: calc(50% - 20px);
+         }
+         .ico-web:after {
+            background: url("../images/sprite/sprite.svg#ico-web") no-repeat;
          }
          .ico-graphic:after {
-            content: "";
-            position: absolute;
             background: url("../images/sprite/sprite.svg#ico-graphic") no-repeat;
-            width: 40px;
-            height: 40px;
-            top: calc(50% - 20px);
-            right: calc(50% - 20px);
          }
          .ico-photo:after {
-            content: "";
-            position: absolute;
             background: url("../images/sprite/sprite.svg#ico-photo") no-repeat;
-            width: 40px;
-            height: 40px;
-            top: calc(50% - 20px);
-            right: calc(50% - 20px);
          }
          .ico-developing:after {
-            content: "";
-            position: absolute;
             background: url("../images/sprite/sprite.svg#ico-developing") no-repeat;
-            width: 40px;
-            height: 40px;
-            top: calc(50% - 20px);
-            right: calc(50% - 20px);
          }
       }
       .styled-ico {
@@ -114,9 +103,15 @@ body {
          font-weight: 300;
          text-align: center;
       }
+      @include media-breakpoint-down(sm) {
+         margin-bottom: 0;
+         .col-sm-12 {
+            margin-bottom: 30px;
+         }
+      }
    }
 }
-
+/*profile*/
 .profile-wrapper {
    width: 100%;
    min-height: 470px;
@@ -124,7 +119,12 @@ body {
    .txt-holder {
       text-align: center;
       margin-top: 61px;
-      margin-bottom: 134px;
+      @include media-breakpoint-down(lg) {
+         margin-top: 30px;
+      }
+      @include media-breakpoint-up(lg) {
+         margin-bottom: 134px;
+      }
       h1 {
          color: $turbo;
          font-size: 30px;
@@ -160,59 +160,43 @@ body {
       }
       .prf-ico {
          position: relative;
-         .ico-analyse:after {
+         .sets-prf-ico:after {
             content: "";
             position: absolute;
-            background: url("../images/sprite/sprite.svg#ico-analyse") no-repeat;
             height: 45px;
             width: 45px;
             top: -73px;
             left: calc(50% - 22px);
+         }
+         .ico-analyse:after {
+            background: url("../images/sprite/sprite.svg#ico-analyse") no-repeat;
          }
          .ico-preparing:after {
-            content: "";
-            position: absolute;
             background: url("../images/sprite/sprite.svg#ico-preparing") no-repeat;
-            height: 45px;
-            width: 45px;
-            top: -73px;
-            left: calc(50% - 22px);
          }
          .ico-working:after {
-            content: "";
-            position: absolute;
             background: url("../images/sprite/sprite.svg#ico-working") no-repeat;
-            height: 45px;
-            width: 45px;
-            top: -73px;
-            left: calc(50% - 22px);
          }
          .ico-finalyse:after {
-            content: "";
-            position: absolute;
             background: url("../images/sprite/sprite.svg#ico-finalyse") no-repeat;
-            height: 45px;
-            width: 45px;
-            top: -73px;
-            left: calc(50% - 22px);
          }
          .ico-testing:after {
-            content: "";
-            position: absolute;
             background: url("../images/sprite/sprite.svg#ico-testing") no-repeat;
-            height: 45px;
-            width: 45px;
-            top: -73px;
-            left: calc(50% - 22px);
          }
          .ico-deliver:after {
-            content: "";
-            position: absolute;
             background: url("../images/sprite/sprite.svg#ico-deliver") no-repeat;
-            height: 45px;
-            width: 45px;
-            top: -73px;
-            left: calc(50% - 22px);
+         }
+      }
+      @include media-breakpoint-down(lg) {
+         .profile-col {
+            margin-top: 85px;
+         }
+      }
+      @include media-breakpoint-down(md) {
+         .profile-col {
+            &:last-child {
+               margin-bottom: 20px;
+            }
          }
       }
    }
